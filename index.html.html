@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+        .navbar-nav .nav-link:hover {
+        color: #dbcd4b; 
+        }
+
+        .navbar-nav .nav-link {
+        color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            padding-top: 70px;
+        }
+
+        
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #0a3665;
+            z-index: 10000;
+        }
+
+        .container>h1 {
+            color: #fff;
+        }
+
+        .container>h1 span {
+            color: #df1749ed;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+        #inicio {
+    margin-bottom: 0;
+    }
+
+    #produtos {
+    padding-top: 0;
+}
+
+    }
+
+
+    @media screen and (max-width: 767px) {
+        #inicio {
+    margin-bottom: 0;
+    }
+
+    #produtos {
+    padding-top: 0;
+}
+    #produtos .row-cols-sm-2{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Ebac <span>SHOES</span></h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">PRODUTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">PROMOÇÕES</a>
+                        </li>
+                        </ul>
+                </nav>
+                <button id="btn-chegar-emails" class="btn btn-warning" type="button">Checar caixa de entrada</button>
+            </div>
+        </div>
+    </header>
+    <div class="p-3" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>INICIO</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div data-bs-interval="3000" class="carousel-item active">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg">
+                                    <div class="carousel-caption">            
+                                    </div>
+                                </div>
+                                <div data-bs-interval="3000" class="carousel-item">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg">
+                                    <div class="carousel-caption">            
+                                    </div>
+                                </div>
+                                <div data-bs-interval="3000" class="carousel-item">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/05/03/19/09/nike-5126389_1280.jpg">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <h2>PRODUTOS</h2>
+            <div class="container">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#abaProdutos" class="nav-link active" type="button">Moda Masculina</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="abaProdutos">
+                        <div class="container p-1">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                    <img src="./imagem/lebron-james-los-.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Lebron James Los Angeles Lakers City Edition 2023/24</h4>
+                                        <h6>Men's Nike Dri-FIT NBA Swingman Jersey</h6>
+                                        <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="./imagem/tenis-6.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tênis Nike Air Zoom Pegasus 39 - Masculino</h4>
+                                            <h6>Corrida</h6>
+                                            <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card"> 
+                                        <img src="./imagem/detroitpistonsjerseyfront_final.avif">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Men's Detroit Pistons Jersey</h4>
+                                            <h6>Icon Edition</h6>
+                                            <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+
+    <section id="promocoes">
+        <h2>PROMOÇÕES</h2>
+        <div class="container">
+            <nav class="nav nav-pills">
+                <button data-bs-toggle="tab" data-bs-target="#abaPromocoes" class="nav-link active" type="button">Moda Masculina</button>
+            </nav>
+            <div class="tab-content">
+                <div class="tab-pane active" id="abaPromocoes">
+                    <div class="container p-1">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
+                            <div class="col mb-4">
+                                <div class="card">
+                                <img src="./imagem/lebron-james-los-.png">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lebron James Los Angeles Lakers City Edition 2023/24</h4>
+                                    <h6>Men's Nike Dri-FIT NBA Swingman Jersey</h6>
+                                    <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <img src="./imagem/tenis-6.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Tênis Nike Air Zoom Pegasus 39 - Masculino</h4>
+                                        <h6>Corrida</h6>
+                                        <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <img src="./imagem/tenis-2.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Tênis Nike Air Zoom Pegasus 39 - Feminino</h4>
+                                        <h6>Corrida</h6>
+                                        <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <img src="./imagem/tenis-3.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Tênis Nike Air Zoom Pegasus 39 - Masculino</h4>
+                                        <h6>Corrida</h6>
+                                        <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card">
+                                    <img src="./imagem/tenis-4.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Tênis Nike Air Zoom Pegasus 39 - Masculino</h4>
+                                        <h6>Corrida</h6>
+                                        <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="card"> 
+                                    <img src="./imagem/detroitpistonsjerseyfront_final.avif">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Men's Detroit Pistons Jersey</h4>
+                                        <h6>Icon Edition</h6>
+                                        <a href="#" class="btn btn-primary">Saiba mais +</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast" id="mensagens-alerta">
+        <header class="toast-header">
+            <strong>Important</strong>
+        </header>
+        <div class="toast-body">
+            Voce Possui 10 mensagens não lidas
+        <div class="mt-2 pt-2 border-top">
+            <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                Descartar
+            </button>
+        </div>
+        </div>
+    </div>
+
+</div>
+    <script>
+        const ativadorToast = document.getElementById('btn-chegar-emails')
+        const mensagem = document.getElementById('mensagens-alerta')
+        
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click',function() {
+                const toast = new bootstrap.Toast(mensagem);
+                toast.show();
+            })
+        }
+    </script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
